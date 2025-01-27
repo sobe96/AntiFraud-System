@@ -44,6 +44,7 @@ resource "yandex_dataproc_cluster" "dataproc_cluster" {
       }
       subnet_id   = var.subnet_id
       hosts_count = 1
+      preemptible = true
     }
   }
 }
